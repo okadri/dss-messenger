@@ -44,7 +44,7 @@ gem 'sqlite3' # for testing
 gem 'jquery-rails'
 
 # For Bootstrap support
-gem 'bootstrap-sass', '~> 3.3.5'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sass-rails', '~> 5.0'
 
 # For loading remote JSON
