@@ -10,7 +10,7 @@ class DssMailer < ActionMailer::Base
     Rails.logger.info "Sending e-mail with subject '#{subject}' to e-mail address '#{member.email}' ('#{member.name}') ..."
 
     begin
-      mail(to: "#{member.name} <#{member.email}>", subject: subject).deliver!
+      mail(to: "#{member.name} <#{member.email}>", subject: subject)
       Rails.logger.info "Success sending e-mail '#{member.email}'"
     rescue Net::SMTPFatalError => e
       if e.backtrace.include?('User unknown')
